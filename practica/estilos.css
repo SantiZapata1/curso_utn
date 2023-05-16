@@ -1,5 +1,5 @@
 body{
-    background-color: beige;
+    background-image: url("images/fondo3.png");
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h3{
@@ -19,6 +19,11 @@ h3{
 
 #botonera li{
     display: inline;
+    text-transform: uppercase;
+
+}
+ul{
+    list-style-type:lower-latin;
 }
 
 #botonera li a{
@@ -31,4 +36,9 @@ h3{
      text-align: center;
      line-height: 50px;
      background-color: azure;
+}
+
+a:hover{
+    color:green;
+    text-transform:uppercase;
 }

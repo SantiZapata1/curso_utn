@@ -1,0 +1,51 @@
+body{
+    font-family: verdana;
+}
+h1{
+    text-align: center;
+    color: #4287f5;
+}
+.textoMorado{
+    color: #b21eba;
+    text-align: end;
+}
+#botonera{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+#botonera li{
+    display: inline;
+}
+#botonera li a{
+    border: 1px #b00202 solid;
+    background-color: #fdff8f;
+    color: #b00202;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 35px;    
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+#universal{
+    background-color: #215703;
+    color: #9ed97e;
+}
+#etiqueta{
+    background-color: #215703;
+    color: #9ed97e;
+}
+#clase{
+    background-color: #215703;
+    color: #9ed97e;
+}
+#id{
+    background-color: #215703;
+    color: #9ed97e;
+}
+
+.resaltado{
+    color: #fab339;
+}
