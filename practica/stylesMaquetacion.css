@@ -5,7 +5,36 @@
 }
 
 #caja2{
-    background-color:antiquewhite;
+    background-color:#faebd7;
     width: 200px;
     height: 200px;
+    /*con esta propiedad la posicion de la caja va a depender de los valores de entorno que nosotros le especifiquemos*/
+    position: relative;
+    left: 40px;
+    bottom: 20px;
+}
+
+#caja3{
+    background-color:#F254C4;
+    width: 300px;
+    height: 200px;
+}
+#caja4{
+    background-color: burlywood;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+.texto{
+    text-align:center;    
+}
+#caja5{
+    background-color:greenyellow;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 200px;
+    left: 300px;
 }

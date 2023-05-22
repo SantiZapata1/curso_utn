@@ -1,0 +1,50 @@
+#contenedor{
+    height: 800px;
+    width: 960px;
+    background-color: #cccccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cabecera{
+    background-color:#755608;
+    width:100%;
+    height: 150px;
+}
+#contenido{
+    background-color: #F7CA5B;
+    width:100%;
+    height: 600px;
+
+}
+#pie{
+    background-color: #F5B411;
+    width:100%;
+    height: 100px;
+
+}
+#marca{
+    background-color: #C28F0E;
+    width: 200px;
+    height: 50px;
+    float: left;
+}
+#botonera{
+    background-color: #C28F0E;
+    width: 400px;
+    height: 70px;
+    float:right;
+}
+.cajasContenido{
+    background-color: #75602B;
+    width: 30%;
+    height: 70%;
+    float: left;
+    margin: 15px;
+}
+#cajaClear{
+    background-color: #75602B;
+    width: 90%;
+    height: 20%;
+    clear: left;
+    margin: auto;
+}

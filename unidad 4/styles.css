@@ -1,0 +1,116 @@
+header, section, footer{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-color: rgb(243, 212, 171);
+    height: 100px;
+}
+
+#home{
+    background-color:rgb(200, 243, 243);
+    height: 650px;
+}
+
+#presentacion{
+    background-color: aliceblue;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 200px;
+
+}
+
+#frase{
+    background-color: antiquewhite;
+    height: 400px;
+}
+
+#nosotros{
+    background-color: rgb(241, 241, 194);
+    height: 800px;
+}
+
+#cont_nosotros{
+    height: 600px;
+    width: 1000px;
+    background-color: aqua;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#sec1{
+    background-color: aliceblue;
+    width: 400px;
+    height: 500px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+
+}
+#sec2{
+    background-color: rgb(194, 247, 247);
+    width: 500px;
+    float: right;
+    height: 400px;
+    margin-top: 40px;
+    margin-right: 40px;
+
+
+}
+#sec3{
+    background-color: rgb(236, 236, 71);
+    width: 500px;
+    float: right;
+    height: 90px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+#contacto{
+    background-color:rgb(205, 240, 159);
+    height: 650px;
+}
+
+#ubicacion{
+    background-color: rgb(107, 181, 247);
+    height: 650px;
+    width: 600px;
+    float: left;
+}
+#datos{
+    background-color: rgb(223, 166, 93);
+    height: 650px;
+    width: 600px;
+    float: right;
+}
+
+footer{
+    background-color: rgb(211, 199, 199);
+    height: 80px;
+}
+#redes{
+    height: 50px;
+    width: 600px;
+    background-color: aliceblue;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 300px;
+}
+
+#logo{
+    float: left;
+    background-color:rgb(189, 144, 49);
+    height: 100px;
+    width: 300px;
+}
+#botonera_principal{
+    float: right;
+    background-color:rgb(189, 144, 49);
+    height: 100px;
+    width: 700px;
+}
