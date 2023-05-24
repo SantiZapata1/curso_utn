@@ -1,0 +1,193 @@
+body, html{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header, section, footer{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-color: #042940; /* Gris medio */
+    height: 80px;
+}
+
+
+#home{
+    background-image: url(images/fotogym.jpeg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay; /* Aplica el modo de mezcla de capas */
+
+    height: 650px;
+}
+
+#presentacion{
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+
+}
+#primer-texto{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+#segundo-texto{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+}
+#boton-unirse{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left:310px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border: 3px solid white;
+    color: white;
+    background-color: #042940;
+}
+
+#frase{
+    background-color: antiquewhite;
+    height: 350px;
+}
+
+#nosotros{
+    background-color: rgb(241, 241, 194);
+    height: 800px;
+}
+
+#cont_nosotros{
+    height: 600px;
+    width: 1000px;
+    background-color: aqua;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#sec1{
+    background-color: aliceblue;
+    width: 400px;
+    height: 500px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+
+}
+
+#sec2{
+    background-color: rgb(194, 247, 247);
+    width: 500px;
+    float: right;
+    height: 400px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+#sec3{
+    background-color: rgb(236, 236, 71);
+    width: 500px;
+    float: right;
+    height: 90px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+#contacto{
+    background-color:rgb(205, 240, 159);
+    height: 650px;
+}
+
+#ubicacion{
+    background-color: rgb(107, 181, 247);
+    height: 650px;
+    width: 600px;
+    float: left;
+}
+
+#datos{
+    background-color: rgb(223, 166, 93);
+    height: 650px;
+    width: 600px;
+    float: right;
+}
+
+footer{
+    background-color: #042940;
+    height: 80px;
+}
+
+#caja-redes{
+    height: 50px;
+    width: 600px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 300px;
+}
+
+#logo{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding-top:30px ;
+    padding-left: 100px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#caja_botonera{
+    float: right;
+    height: 50px;
+    width: 500px;
+}
+
+#botonera, #redes{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+#botonera ul li{
+    flex-grow: 1;
+}
+#botonera li a{
+
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+
+}
+
+#botonera li a:hover{
+    color: #DBF227;
+
+}
+#boton-unirse:hover{
+    color: #DBF227;
+    border-color: #DBF227;
+
+}
+
+#redes  a{
+    text-decoration: none;
+}
+
+.social-link i{
+    color: white;
+}
+i:hover{
+    color:#DBF227;
+}
