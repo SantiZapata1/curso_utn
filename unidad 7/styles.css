@@ -1,0 +1,459 @@
+/*
+    PENDIENTE DE LA UNIDAD 6
+
+    En la parte del responsive de width <599:
+
+    1_no me salio poner la botonera inicial bien pegada a la derecha
+    2_el boton de "unete" no esta bien centrado siempre.
+    3_ la seccion "nosotros" no tiene un height automatico, no supe
+    hacerlo.
+
+    aclarar conceptos de posicionamiento de cajas y unidades
+    de medida.
+
+
+*/
+
+
+/*cuerpo*/
+body, html{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    background-color:#3E432E;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf),
+    format(truetype), url(fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf), format(svg);
+}
+/*secciones principales*/
+header, section, footer{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-color: #042940; 
+    height: 80px;
+}
+#logo{
+    float: left;
+    height: 100%;
+    width: 200px;
+}
+#palabra{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 50px;
+    padding-top: 30px;
+    position: absolute;
+}
+
+#caja_botonera{
+    float: right;
+    height: 50px;
+    width: 500px;
+}
+/*seccion home*/
+#home{
+    background-image: url(images/fotogym.jpeg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay; 
+
+    height: 650px;
+}
+#presentacion{
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+#primer-texto{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+#segundo-texto{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+}
+#boton-unirse{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left:310px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border: 3px solid white;
+    color: white;
+    background-color: #042940;
+}
+
+#frase{
+    background-color: antiquewhite;
+    height: 350px;
+}
+/*seccion sobre nosotros*/
+#nosotros{
+    background-color: #042940; 
+    height: 800px;
+}
+
+#cont_nosotros{
+    height: 700px;
+    width: 1000px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#sec1{
+    background-color: #616F39;
+    width: 400px;
+    height: 600px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#sec2{
+    width: 500px;
+    float: right;
+    height: 380px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#sec3{
+    background-color:#616F39;
+    width: 500px;
+    float: right;
+    height: 200px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+#sec3 h4{
+    column-count: 3;
+}
+/*seccion de contacto*/
+#contacto{
+    background-color:rgb(205, 240, 159);
+    height: 650px;
+}
+
+#ubicacion{
+    background-color: #A7D129;
+    height: 650px;
+    width: 600px;
+    float: left;
+}
+
+#datos{
+    background-color:#616F39;
+    height: 650px;
+    width: 600px;
+    float: right;
+}
+#datos h3{
+    text-align: center;
+}
+#datos p{
+    margin-left: 30px;
+}
+
+/*seccion de footer*/
+footer{
+    background-color: #042940; 
+    height: 80px;
+}
+
+#caja-redes{
+    height: 50px;
+    width: 600px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 300px;
+}
+
+#botonera, #redes{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*botoneras y links*/
+#botonera ul li{
+    flex-grow: 1;
+}
+#botonera li a{
+
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+
+}
+#botonera li a:hover{
+    color: #DBF227;
+
+}
+#boton-unirse:hover{
+    color: #DBF227;
+    border-color: #DBF227;
+
+}
+#redes  a{
+    text-decoration: none;
+}
+.social-link i{
+    color: white;
+}
+i:hover{
+    color:#DBF227;
+}
+
+
+
+
+
+
+
+/*cambios segun la resolucion de la pantala
+
+ Estos estilos se aplican si la resolucion esta en estos parametros
+ sino, se aplica la predeterminada de arriba
+
+*/
+@media all and (min-width:600px) and (max-width:1200px){
+
+    /*secciones principales*/
+    header, section, footer{
+        width: 580px;
+    }
+
+    #logo{
+        width: 150px;
+    }
+    #palabra{
+        padding-left: 30px;
+        padding-top: 30px;
+        position: absolute;
+    }
+    #caja_botonera{
+        height: 50px;
+        width: 350px;
+    }
+
+    /*seccion home*/
+    #presentacion{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+
+    #primer-texto{
+        font-size: 15px;
+    }
+    #segundo-texto{
+        font-size: 40px;
+    }
+    #boton-unirse{
+        font-size: 15px;
+        margin-left:110px;
+    }
+    /*seccion sobre nosotros*/
+    #nosotros{
+        height: 1200px;
+    }
+
+    #cont_nosotros{
+        height: 1150px;
+        width: 550px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    #sec1{
+        width: 470px;
+        height: 500px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    #sec2{
+        width: 470px;
+        height: 400px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    #sec3{
+        width: 470px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    /*seccion de contacto*/
+    #contacto{
+        height: 1100px;
+        width: 580px;
+    }
+    #ubicacion{
+        height: 550px;
+        width: 580px;
+    }
+    #datos{
+        height: 550px;
+        width: 580px;
+    }
+    /*seccion de footer*/
+    #caja-redes{
+        width: 400px;
+        margin-left: 100px;
+    }
+}
+
+@media all and (max-width:599px){
+
+    /*secciones principales*/
+    header, section, footer{
+        width: 90%;
+    }
+    #header{
+        display: flex;
+        height:auto;
+    }
+    #logo{
+        height: 100%;
+        width: 30%;
+    }
+    #palabra{
+        padding-left: 30px;
+        padding-top: 30px;
+        position: absolute;
+    }
+    /*como hacer para que quede tirado a la derecha?*/
+    #caja_botonera{
+        height: auto;
+        width: 30%;
+        margin-left:100px;
+    }
+
+    #botonera{
+        display: inline;
+    }
+    /*seccion home*/
+    #home{
+        height: 700px;
+    }
+    #presentacion{
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        margin-top: 30%;
+        margin-left:15% ;
+
+    }
+    /*no pude lograr que quede en el medio*/
+    #boton-unirse{
+        font-size: 100%;
+        margin-left:23%;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    /*seccion sobre nosotros*/
+
+    /*no entiendo por que no me deja poner en auto el height*/
+    #nosotros{
+        height: 1100px;
+    }
+
+    #cont_nosotros{
+        height: auto;
+        width: 95%;
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    #sec1{
+        width: 80%;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    /*no pude hacer que la imagen quede bien */
+    #sec2{
+        float: left;
+        width: 80%;
+        height: 400px;
+        margin-top: 10px;
+        margin-left:10px;
+    }
+
+    #sec3{
+        width: 80%;
+        float: left;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    /*seccion de contacto*/
+    #contacto{
+        height: 1300px;
+    }
+
+    #ubicacion{
+        height: 650px;
+        width: 100%;
+    }
+    #datos{
+        height: 650px;
+        width: 100%;
+    }
+    /*seccion de footer*/
+    footer{
+        height: 80px;
+        width: 90%;
+    }
+
+    #caja-redes{
+        height: 50px;
+        width: 70%;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 10%;
+    }
+
+    /*botoneras y links*/
+   
+    #botonera li a{
+
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+
+    }
+}

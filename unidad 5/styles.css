@@ -1,8 +1,9 @@
+/*cuerpo*/
 body, html{
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
-
+/*secciones principales*/
 header, section, footer{
     width: 1200px;
     margin-left: auto;
@@ -10,27 +11,40 @@ header, section, footer{
 }
 
 header{
-    background-color: #042940; /* Gris medio */
+    background-color: #042940; 
     height: 80px;
 }
+#logo{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding-top:30px ;
+    padding-left: 100px;
+    text-transform: uppercase;
+    color: white;
+}
 
-
+#caja_botonera{
+    float: right;
+    height: 50px;
+    width: 500px;
+}
+/*seccion home*/
 #home{
     background-image: url(images/fotogym.jpeg);
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: overlay; /* Aplica el modo de mezcla de capas */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay; 
 
     height: 650px;
 }
-
 #presentacion{
     width: 800px;
     height: 300px;
     position: absolute;
     margin-top: 200px;
     margin-left: 200px;
-
 }
+
 #primer-texto{
     text-align: center;
     text-transform: uppercase;
@@ -58,7 +72,7 @@ header{
     background-color: antiquewhite;
     height: 350px;
 }
-
+/*seccion sobre nosotros*/
 #nosotros{
     background-color: rgb(241, 241, 194);
     height: 800px;
@@ -100,7 +114,7 @@ header{
     margin-top: 10px;
     margin-right: 40px;
 }
-
+/*seccion de contacto*/
 #contacto{
     background-color:rgb(205, 240, 159);
     height: 650px;
@@ -119,7 +133,7 @@ header{
     width: 600px;
     float: right;
 }
-
+/*seccion de footes*/
 footer{
     background-color: #042940;
     height: 80px;
@@ -131,22 +145,6 @@ footer{
     position: absolute;
     margin-top: 15px;
     margin-left: 300px;
-}
-
-#logo{
-    float: left;
-    text-align: center;
-    text-decoration: none;
-    padding-top:30px ;
-    padding-left: 100px;
-    text-transform: uppercase;
-    color: white;
-}
-
-#caja_botonera{
-    float: right;
-    height: 50px;
-    width: 500px;
 }
 
 #botonera, #redes{

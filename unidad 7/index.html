@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--cabecera-->
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="viewport" content="width=devices-width, initial-scale=1">
+
+    <!-- librerias de fonnnts¿-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!--codigo javascript-->
+    <script type="text/javascript" src="unidad7.js"></script>
+
+    <!--codigo CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--titulo de la pagina web-->
+    <title>Nicolas Zapata</title>
+
+</head>
+
+<!--cuerpo de la pagina-->
+<body>
+
+    <!--barra principal-->
+    <header id="header">
+
+        <div id="logo">
+            <a id="palabra" href="#header">Nico Zapata</a>
+        </div>
+
+        <nav id="caja_botonera">
+            <ul id="botonera">
+                <li><a href="#header">inicio</a> </li>
+                <li><a href="#nosotros">nosotros</a> </li>
+                <li><a href="#contacto">contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--seccion principal-->
+    <section id="home">
+
+        <div id="presentacion" >
+            <h5 id="primer-texto"> <em>mas</em> no es mejor </h5>
+            <h2 id="segundo-texto">mejor, <em>es mejor</em> </h2>
+            <div ><a href="#contacto"id="boton-unirse">unete al equipo</a></div>
+        </div>
+
+    </section>
+
+    <!--seccion de informacion del negocio-->
+    <section id="nosotros">
+
+        <div id="cont_nosotros">
+            <div id="sec1">
+                <h4>descripcion de su filosofia 
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusamus voluptate totam accusantium reiciendis itaque cum? Vel magnam nihil fugit cum ipsum dolor quam quidem architecto, expedita explicabo, nobis ex.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ab nihil quis aliquid perferendis repellat explicabo minus commodi cumque nulla, ea sapiente voluptatem molestias veniam reiciendis illo tenetur, labore laudantium.     
+                </h4>
+            </div>
+            <div id="sec2"> 
+                <img src="images/fotoNiki.png" alt="fotoNiki">
+            </div>
+            <div id="sec3">
+                sus puntos fuertes <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequatur rerum quos sequi soluta debitis impedit! Id incidunt distinctio atque dolor doloremque dicta pariatur ipsa, blanditiis obcaecati, illum quisquam aut.
+            </div>
+        </div>
+
+    </section>
+
+    <!--seccion de contacto-->
+    <section id="contacto">
+
+        <div id="ubicacion">
+            <h3>ubicacion del negocio</h3>
+        </div>
+        <div id="datos">
+
+            <h3>datos del cliente</h3>
+            <p>
+                <script>
+                    //mostrar respuestas de las preguntas
+                    document.write("Nombre: "+nombreCompleto+"<br>");
+                    document.write("Edad: "+edad+"<br>");
+                    document.write("Localidad: "+localidad+"<br>");
+                    document.write("Mail: "+mail+"<br>");
+                    document.write("Interes principal: "+intereses+"<br>");
+                </script>
+            </p>
+        </div>
+
+    </section>
+
+    <!--seccion de footer o pie de pagina-->
+    <footer id="footer">
+
+        <nav id="caja-redes">
+            <ul id="redes">
+                <li><a href="https://www.instagram.com/nicolaszapataa/" class="social-link" target="new"><i class="fab fa-instagram fa-3x"></i></a></li>
+                <li><a href="https://www.twitter.com/" class="social-link" target="new"><i class="fab fa-twitter fa-3x"></i></a></li>
+                <li><a href="https://www.facebook.com/" class="social-link" target="new"><i class="fab fa-facebook fa-3x"></i></a></li>
+                
+
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>
