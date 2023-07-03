@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--   
+TAREA
+-desarrollar contenido de una nueva seccion
+-vincular unidad 8 js a html con una estructura de control y DOM
+-->
+
 <!--cabecera-->
 <head>
     
@@ -15,8 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Tilt+Warp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <!--codigo javascript-->
-    <script type="text/javascript" src="unidad8.js"></script>
+    <!--codigo javascript (ver si esta bien aca)-->
+    <script type="text/javascript" src="unidad7.js"></script>
 
     <!--codigo CSS-->
     <link rel="stylesheet" href="styles.css">
@@ -79,22 +85,34 @@
     <!--seccion de contacto-->
     <section id="contacto">
 
-        <div id="ubicacion">
-            <h3>ubicacion del negocio</h3>
+        <div id="ubicacion" >
+            <h3 class="subtitulo" >ubicacion del negocio</h3>
+            <div id="secUbi"> 
+                <img src="images/Captura de Pantalla 2023-06-23 a la(s) 20.50.49.png" alt="fotoNiki">
+            </div>
         </div>
         <div id="datos">
 
-            <h3>datos del cliente</h3>
-            <p>
-                <script>
-                    //mostrar respuestas de las preguntas
-                    document.write("Nombre: "+nombreCompleto+"<br>");
-                    document.write("Edad: "+edad+"<br>");
-                    document.write("Localidad: "+localidad+"<br>");
-                    document.write("Mail: "+mail+"<br>");
-                    document.write("Interes principal: "+intereses+"<br>");
-                </script>
-            </p>
+            <h3 class="subtitulo">datos del cliente</h3>
+            
+            <div id="form">
+                <p id="datos-cliente">
+                    <script>
+                        //mostrar respuestas de las preguntas
+                        document.write("Nombre: "+nombreCompleto+"<br>");
+                        document.write("Edad: "+edad+"<br>");
+                        document.write("Localidad: "+localidad+"<br>");
+                        document.write("Mail: "+mail+"<br>");
+                        document.write("Interes principal: "+intereses+"<br>");
+                    </script>
+                </p>
+
+                <div ><a id="boton-imc" onclick="funcionIMC()"> conocer mi IMC</a></div>
+
+            </div>
+            
+
+
         </div>
 
     </section>
@@ -112,7 +130,8 @@
             </ul>
         </nav>
     </footer>
-    
-    
+    <!--codigo javascript-->
+    <script type="text/javascript" src="unidad8.js"></script>
+
 </body>
 </html>

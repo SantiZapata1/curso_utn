@@ -1,4 +1,6 @@
-alert("alllerrtt")
-confirm("¿corfim?")
-document.write('esto es un document wwwrriitee');
-prompt("Su equipo favorito es: ","boooke");
+function mostrarOcultarDiv() {
+  
+  }
+    var div = document.getElementById("input");
+    var contenido = div.textContent;
+    document.write(contenido);

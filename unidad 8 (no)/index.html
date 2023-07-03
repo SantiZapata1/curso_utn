@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--cabecera-->
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="viewport" content="width=devices-width, initial-scale=1">
+
+    <!-- librerias de fonnnts¿-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    
+
+    <!--codigo CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--titulo de la pagina web-->
+    <title>Nicolas Zapata</title>
+
+    <!--codigo javascript-->
+    <script type="text/javascript" src="unidad8.js"></script>
+
+</head>
+
+<!--cuerpo de la pagina-->
+<body>
+
+    <!--barra principal-->
+    <header id="header">
+
+        <div id="logo">
+            <a id="palabra" href="#header">Nico Zapata</a>
+        </div>
+
+        <nav id="caja_botonera">
+            <ul id="botonera">
+                <li><a href="#header">inicio</a> </li>
+                <li><a href="#nosotros">nosotros</a> </li>
+                <li><a href="#contacto">contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--seccion principal-->
+    <section id="home">
+
+        <div id="presentacion" >
+            <h5 id="primer-texto"> <em>mas</em> no es mejor </h5>
+            <h2 id="segundo-texto">mejor, <em>es mejor</em> </h2>
+            <div ><a href="#contacto"id="boton-unirse">unete al equipo</a></div>
+        </div>
+
+    </section>
+
+    <!--seccion de informacion del negocio-->
+    <section id="nosotros">
+
+        <div id="cont_nosotros">
+            <div id="sec1">
+                 
+            </div>
+            <div id="sec2"> 
+                <img src="images/fotoNiki.png" alt="fotoNiki">
+            </div>
+            
+            
+        </div>
+
+    </section>
+
+    <!--seccion de contacto-->
+    <section id="contacto">
+
+        <div id="ubicacion">
+            <h3>ubicacion del negocio</h3>
+
+            <p>
+                Chaco, resistencia. 
+            </p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.599797168074!2d-58.97607532348818!3d-27.450580415893832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450dc8b792cd71%3A0x4e8f4c61af425df7!2sTerra%20Fitness!5e0!3m2!1ses!2sar!4v1687211183243!5m2!1ses!2sar" width="80%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="ubiMaps"></iframe>
+        </div>
+
+        <div id="datos">
+
+            <h3>datos del cliente</h3>
+            
+            <p>
+                ingrese sus datos para unirse al equipo
+            </p>
+
+            <form  id="formulario">
+
+                <input class="input" type="text" name="nombre" id="nombres" placeholder="ingrese su nombre">
+
+                <input class="input" type="text" name="edad" id="edad" placeholder="ingrese su edad">
+
+                <input class="input" type="text" name="mail" id="mail" placeholder="ingrese su mail">
+
+                <input class="input" type="text" name="localidad" id="localidad" placeholder="ingrese su localidad" >
+
+                <button onclick="mostrarContenido()" id="boton-reg" class="input" >registrarme</button>
+
+            </form>
+
+            <div id="mensaje" style="display:none;">
+
+                <h5>Datos ingresados</h5>
+                
+                <h6>nombre:</h6>
+                <h6>edad:</h6>
+                <h6>mail:</h6>
+                <h6>localidad:</h6>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--seccion de footer o pie de pagina-->
+    <footer id="footer">
+
+        <nav id="caja-redes">
+            <ul id="redes">
+                <li><a href="https://www.instagram.com/nicolaszapataa/" class="social-link" target="new"><i class="fab fa-instagram fa-3x"></i></a></li>
+                <li><a href="https://www.twitter.com/" class="social-link" target="new"><i class="fab fa-twitter fa-3x"></i></a></li>
+                <li><a href="https://www.facebook.com/" class="social-link" target="new"><i class="fab fa-facebook fa-3x"></i></a></li>
+                
+
+            </ul>
+        </nav>
+    </footer>
+    
+    
+</body>
+</html>

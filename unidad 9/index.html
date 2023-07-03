@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="viewport" content="width=devices-width, initial-scale=1">
+
+    <!-- librerias de fonnnts¿-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!--codigo javascript (ver si esta bien aca)-->
+    <script type="text/javascript" src="unidad7.js"></script>
+
+    <!--bootstrap <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">-->
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--codigo CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--titulo de la pagina web-->
+    <title>Nicolas Zapata</title>
+
+</head>
+
+<!--cuerpo de la pagina-->
+<body>
+
+    <!--header-->
+    <header id="header">
+
+        <!-- logo-->
+        <div id="logo">
+            <a class="logo-pagina" href="#header">Nico Zapata</a>
+        </div>
+
+        <!-- botonera-->
+        <nav id="caja_botonera">
+            <ul id="botonera">
+                <li><a href="#header">inicio</a> </li>
+                <li><a href="#nosotros">nosotros</a> </li>
+                <li><a href="#contacto">contacto</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!--fin del header-->
+
+    <!--seccion home-->
+    <section id="home">
+
+        <div id="presentacion" >
+            <h5 id="primer-texto"> <em>más</em> no es mejor </h5>
+            <h2 id="segundo-texto">mejor, <em>es mejor</em> </h2>
+            <div ><a href="#contacto"id="boton-unirse">únete al equipo</a></div>
+        </div>
+
+    </section>
+    <!--fin seccion home-->
+
+
+    <!--seccion nosotros-->
+    <section id="nosotros">
+
+        <div id="cont_nosotros">
+            <div id="sec1">
+            </div>
+            <div id="sec2"> 
+                <img src="images/fotoNiki.png" alt="fotoNiki">
+            </div>
+            <div id="sec3">
+            </div>
+        </div>
+
+    </section>
+    <!-- fin seccion nosotros-->
+
+
+    <!--seccion de contacto-->
+    <section id="contacto">
+
+        <div id="ubicacion" >
+            <h3 class="subtitulo" >ubicacion del negocio</h3>
+            <div id="secUbi"> 
+                <img src="images/Captura de Pantalla 2023-06-23 a la(s) 20.50.49.png" alt="fotoNiki">
+            </div>
+        </div>
+
+        <div id="datos">
+
+            <h3 class="subtitulo">datos del cliente</h3>
+
+            <div id="form">
+                <!-- hacer que esto sea statico-->
+                <p id="datos-cliente">
+                    <script>
+                        //mostrar respuestas de las preguntas
+                        document.write("Nombre: "+nombreCompleto+"<br>");
+                        document.write("Edad: "+edad+"<br>");
+                        document.write("Localidad: "+localidad+"<br>");
+                        document.write("Mail: "+mail+"<br>");
+                        document.write("Interes principal: "+intereses+"<br>");
+                    </script>
+                </p>
+                <div ><a id="boton-imc" onclick="funcionIMC()"> conocer mi IMC</a></div>
+            </div>
+        </div>
+
+    </section>
+    <!--fin seccion de contacto-->
+
+
+    <!--seccion de footer-->
+    <footer id="footer">
+
+        <nav id="caja-redes">
+            <ul id="redes">
+                <li><a href="https://www.instagram.com/nicolaszapataa/" class="social-link" target="new"><i class="fab fa-instagram fa-3x"></i></a></li>
+                <li><a href="https://www.twitter.com/" class="social-link" target="new"><i class="fab fa-twitter fa-3x"></i></a></li>
+                <li><a href="https://www.facebook.com/" class="social-link" target="new"><i class="fab fa-facebook fa-3x"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+     <!--fin seccion de footer-->
+
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.css" ></script>
+
+    <!--codigo javascript-->
+    <script type="text/javascript" src="unidad8.js"></script>
+    <!--javascript bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>

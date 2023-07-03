@@ -19,7 +19,7 @@
 body, html{
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
-    background-color:#3E432E;
+    background-color:white;
 }
 @font-face {
     font-family: 'Open Sans';
@@ -62,7 +62,6 @@ header{
     background-image: url(images/fotogym.jpeg);
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay; 
-
     height: 650px;
 }
 #presentacion{
@@ -88,12 +87,14 @@ header{
 #boton-unirse{
     text-transform: uppercase;
     font-size: 20px;
-    margin-left:310px;
+    margin-left:300px;
     text-decoration: none;
     padding: 10px 20px 10px 20px;
     border: 3px solid white;
     color: white;
     background-color: #042940;
+    border-radius: 20px;
+
 }
 
 #frase{
@@ -115,7 +116,7 @@ header{
 }
 
 #sec1{
-    background-color: #616F39;
+    background-color: #728F09;
     width: 400px;
     height: 600px;
     float: left;
@@ -139,7 +140,7 @@ img{
 
 
 #sec3{
-    background-color:#616F39;
+    background-color:#728F09;
     width: 500px;
     float: right;
     height: 200px;
@@ -156,24 +157,59 @@ img{
 }
 
 #ubicacion{
-    background-color: #A7D129;
+    background-color: #728F09;
     height: 650px;
     width: 600px;
     float: left;
 }
+#secUbi{
+    height: 500px;
+    width: 450px;
+    margin-left: 15%;
+    border: #042940 5px solid;
+}
 
 #datos{
-    background-color:#616F39;
+    background-color:#728F09;
     height: 650px;
     width: 600px;
     float: right;
 }
-#datos h3{
+.subtitulo{
     text-align: center;
+    text-transform: uppercase;
+    color: white;
+    height: 50px;
+    padding-top: 10px;
 }
-#datos p{
-    margin-left: 30px;
+#boton-imc{
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left:50px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border: 3px solid white;
+    color: white;
+    background-color: #042940;
+    border-radius: 20px;
+
 }
+#datos-cliente{
+    background-color: ;
+    margin-bottom: 50px;    
+    margin-left: 15px;
+}
+
+#form{
+    background-color: burlywood;
+    height: 300px;
+    width: 280px;
+    margin-left:auto ;
+    margin-right: auto;
+    border: #042940 5px solid;
+
+}
+
 
 /*seccion de footer*/
 footer{
@@ -219,8 +255,16 @@ footer{
 #boton-unirse:hover{
     color: #DBF227;
     border-color: #DBF227;
-
+    cursor: pointer;
 }
+#boton-imc:hover{
+    color: #DBF227;
+    border-color: #DBF227;
+    cursor: pointer;
+}
+
+
+
 #redes  a{
     text-decoration: none;
 }
@@ -323,9 +367,21 @@ i:hover{
         height: 550px;
         width: 580px;
     }
+
+    #secUbi{
+        height: 400px;
+        width: 450px;
+        margin-left: 10%;
+    }
     #datos{
         height: 550px;
         width: 580px;
+    }
+
+    #form{
+        height: 300px;
+        width: 280px;
+
     }
     /*seccion de footer*/
     #caja-redes{
@@ -428,6 +484,11 @@ i:hover{
     #ubicacion{
         height: 650px;
         width: 100%;
+    }
+
+    #secUbi{
+        width: 90%;
+        margin-left: 5%;
     }
     #datos{
         height: 650px;
