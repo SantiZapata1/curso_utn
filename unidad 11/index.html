@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="viewport" content="width=devices-width, initial-scale=1">
+
+    <!-- librerias de fonnnts¿-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!--codigo javascript (ver si esta bien aca)-->
+    <script type="text/javascript" src="unidad7.js"></script>
+
+    <!--bootstrap <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">-->
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--codigo CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--titulo de la pagina web-->
+    <title>Nicolas Zapata</title>
+
+</head>
+
+<!--cuerpo de la pagina-->
+<body>
+
+    <!--header-->
+    <header id="header">
+
+        <!-- logo-->
+        <div id="logo">
+            <a class="logo-pagina" href="#header">Nico Zapata</a>
+        </div>
+
+        <!-- botonera-->
+        <nav id="caja_botonera">
+            <ul id="botonera">
+                <li><a href="#header">inicio</a> </li>
+                <li><a href="#contenido">contenido</a> </li>
+                <li><a href="#nosotros">nosotros</a> </li>
+                <li><a href="#contacto">contacto</a> </li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <!--fin header-->
+
+    <!--seccion home-->
+    <section id="home">
+
+        <div id="presentacion" >
+            <h5 id="primer-texto"> <em>más</em> no es mejor </h5>
+            <h2 id="segundo-texto">mejor, <em>es mejor</em> </h2>
+            <div ><a href="#contacto"id="boton-unirse">únete al equipo</a></div>
+        </div>
+
+    </section>
+    <!--fin seccion home-->
+
+    <!--seccion contenido-->
+    <section id="contenido" >
+
+        <div class="container-fluid">
+
+            <div id="titulo-cont" class="row" ></div>
+
+            <div id="div-cont" class="row">
+
+                <div class="col-xl" id="mod1"></div>
+                <div class="col-xl" id="mod2"></div>
+                <div class="col-xl" id="mod3"></div>
+                <div class="col-xl" id="mod4"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--fin seccion contenido-->
+
+    <!--seccion nosotros-->
+    <section id="nosotros">
+
+        <div id="cont_nosotros">
+            <div id="sec1">
+
+                <h5 class="subtitulo">consigue tu propia planificacion personalizada  </h5>
+                
+                <div id="form2">
+                    <form action="#sec1">
+
+                        <input class="form-control" type="text" placeholder="ingrese su nombre" required minlength="3" maxlength="20" > 
+                        <input class="form-control" type="text" placeholder="ingrese su edad" min="13">
+                        <input class="form-control" type="email" placeholder="ingrese su email" required>
+                        <textarea class="form-control" type="text" placeholder="¿cual es su objetivo principal?"></textarea>
+
+                        <input class="btn btn-primary" type="submit">
+
+                    </form>
+                    <br>
+                    <div class="alert alert-primary row" role="alert">
+                        <p>¡no te podes perder esta oportunidad!</p>   
+                    </div>
+                </div>
+
+            </div>
+            <div id="sec2"> 
+                <img src="images/fotoNiki.png" alt="fotoNiki" class="img-fluid">
+            </div>
+            <div id="sec3">
+            </div>
+        </div>
+
+    </section>
+    <!-- fin seccion nosotros-->
+
+
+    <!--seccion de contacto-->
+    <section id="contacto">
+
+        <div id="ubicacion" >
+            <h3 class="subtitulo" >ubicacion del negocio</h3>
+
+            <div id="secUbi"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.599797168074!2d-58.97607532348818!3d-27.450580415893832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450dc8b792cd71%3A0x4e8f4c61af425df7!2sTerra%20Fitness!5e0!3m2!1ses!2sar!4v1687211183243!5m2!1ses!2sar" width="80%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="ubiMaps"></iframe>
+            </div>
+        </div>
+
+        <div id="datos">
+
+            <h3 class="subtitulo">datos del cliente</h3>
+
+            <div id="form">
+                <!-- hacer que esto sea statico-->
+                <p id="datos-cliente">
+                    <script>
+                        //mostrar respuestas de las preguntas
+                        document.write("Nombre: "+nombreCompleto+"<br>");
+                        document.write("Edad: "+edad+"<br>");
+                        document.write("Localidad: "+localidad+"<br>");
+                        document.write("Mail: "+mail+"<br>");
+                        document.write("Interes principal: "+intereses+"<br>");
+                    </script>
+                </p>
+                <div ><a id="boton-imc" onclick="funcionIMC()"> conocer mi IMC</a></div>
+            </div>
+        </div>
+
+    </section>
+    <!--fin seccion de contacto-->
+
+
+    <!--seccion de footer-->
+    <footer id="footer">
+
+        <nav id="caja-redes">
+            <ul id="redes">
+                <li><a href="https://www.instagram.com/nicolaszapataa/" class="social-link" target="new"><i class="fab fa-instagram fa-3x"></i></a></li>
+                <li><a href="https://www.twitter.com/" class="social-link" target="new"><i class="fab fa-twitter fa-3x"></i></a></li>
+                <li><a href="https://www.facebook.com/" class="social-link" target="new"><i class="fab fa-facebook fa-3x"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+     <!--fin seccion de footer-->
+
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.css" ></script>
+
+    <!--codigo javascript-->
+    <script type="text/javascript" src="unidad8.js"></script>
+    <!--javascript bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>

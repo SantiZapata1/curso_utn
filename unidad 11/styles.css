@@ -1,0 +1,577 @@
+/*cuerpo*/
+body, html{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    background-color:#D6D58E;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf),
+    format(truetype), url(fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf), format(svg);
+}
+/*secciones principales*/
+header, section, footer{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*inicio del header*/
+header{
+    background-color: #042940; 
+    height: 80px;
+}
+#logo{
+    float: left;
+    height: 100%;
+    width: 200px;
+}
+.logo-pagina{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 50px;
+    padding-top: 30px;
+    position: absolute;
+    visibility: hidden;
+}
+#caja_botonera{
+    float: right;
+    height: 50px;
+    width: 600px;
+}
+#botonera li a{
+
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border: #042940  1px solid;
+    border-radius: 30px;
+    background-color: #0b3853;
+}
+#botonera li a:hover{
+    color: #DBF227;
+    border: #DBF227  1px solid;
+
+}
+/*no se que hace*/
+#botonera ul li{
+    flex-grow: 1;
+}
+/*fin del header*/
+
+
+/*seccion home*/
+#home{
+    background-image: url(images/fotogym.jpeg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay; 
+    height: 650px;
+}
+#presentacion{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 350px;
+}
+
+#primer-texto{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+#segundo-texto{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+    margin-top: 20px;
+
+}
+#boton-unirse{
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 220px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border: 3px solid white;
+    color: white;
+    background-color: #0b3853;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+#boton-unirse:hover{
+    color: #DBF227;
+    border-color: #DBF227;
+    cursor: pointer;
+}
+
+/*fin seccion home*/
+
+/* seccion contenido */
+
+/*seccion contenido*/
+#contenido{
+    background-color: #005C53;
+    height: 600px;
+    padding-top: 20px;
+}
+
+/*titulo de la seccion contenido*/
+#titulo-cont{
+    background-color:#063e61;
+    height: 80px;
+}
+
+/*div de la seccion contenido*/
+#div-cont{
+    background-color:#063e61;
+    margin-top: 50px;
+    height: 400px;
+}
+
+#mod1{
+    background-color: #116192;
+}
+#mod2{
+    background-color: #5c8aa7;
+}
+#mod3{
+    background-color: #5292b9;
+}
+#mod4{
+    background-color: #7aa7c4;
+}
+
+
+
+/* fin seccion contenido */
+
+/*seccion sobre nosotros*/
+#nosotros{
+    background-color: #042940; 
+    height: 800px;
+}
+
+#cont_nosotros{
+    height: 700px;
+    width: 1000px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#sec1{
+    background-color: #063e61;
+    width: 400px;
+    height: 600px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#form2{
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 10%;
+}
+input, textarea{
+    display: block;
+    margin-top: 10px;
+}
+
+#sec2{
+    width: 500px;
+    float: right;
+    height: 380px;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+img{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+#sec3{
+    background-color:#063e61;
+    width: 500px;
+    float: right;
+    height: 210px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+/*fin seccion sobre nosotros*/
+
+
+/*seccion de contacto*/
+#contacto{
+    height: 650px;
+}
+
+#ubicacion{
+    background-color: #063e61;
+    height: 650px;
+    width: 600px;
+    float: left;
+}
+#secUbi{
+    height: 500px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border: #042940 5px solid;
+    display: block;
+    margin-top: 30px;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+}
+
+#datos{
+    background-color:#063e61;
+    height: 650px;
+    width: 600px;
+    float: right;
+}
+.subtitulo{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    height: 50px;
+    padding-top: 25px;
+
+}
+#boton-imc{
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    width: 170px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border: white  2px solid;
+    color: white;
+    background-color: #0b3853;
+    border-radius: 30px;
+
+}
+#boton-imc:hover{
+    color: #DBF227;
+    border-color: #DBF227;
+    cursor: pointer;
+}
+
+#datos-cliente{
+    margin-bottom: 50px;    
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+
+#form{
+    background-color: #005C53;
+    height: 400px;
+    width: 300px;
+    margin-left:auto ;
+    margin-right: auto;
+    border: #042940 5px solid;
+    margin-top: 30px;
+}
+/*fin seccion de contacto*/
+
+
+/*seccion de footer*/
+footer{
+    background-color: #042940; 
+    height: 80px;
+}
+
+#caja-redes{
+    height: 50px;
+    width: 600px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 300px;
+}
+
+#botonera, #redes{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+#redes  a{
+    text-decoration: none;
+}
+.social-link i{
+    color: white;
+}
+i:hover{
+    color:#DBF227;
+}
+/*fin seccion footer*/
+
+
+/* responsive de width entre 600-1200*/
+
+@media all and (min-width:600px) and (max-width:1200px){
+
+    /*secciones principales*/
+    header, section, footer{
+        width: 580px;
+    }
+    /*header*/
+    #logo{
+        width: 150px;
+    }
+    .logo-pagina{
+        padding-left: 30px;
+        padding-top: 25px;
+        position: absolute;
+    }
+    #caja_botonera{
+        height: 50px;
+        width: 350px;
+        margin-right: 10px;
+    }
+    /* fin header*/
+
+
+    /*seccion home*/
+    #presentacion{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+
+    #primer-texto{
+        font-size: 15px;
+    }
+    #segundo-texto{
+        font-size: 40px;
+    }
+    #boton-unirse{
+        font-size: 15px;
+        width: 175px;
+    }
+    /*fin seccion home*/
+
+    /*seccion sobre nosotros*/
+    #nosotros{
+        height: 1200px;
+    }
+
+    #cont_nosotros{
+        height: 1150px;
+        width: 550px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    #sec1{
+        width: 470px;
+        height: 500px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    #sec2{
+        width: 470px;
+        height: 400px;
+        margin-top: 10px;
+        margin-left: 40px;
+        float: left;
+
+    }
+
+    #sec3{
+        width: 470px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 40px;
+        float: left;
+    }
+    /*fin seccion sobre nosotros*/
+
+
+    /*seccion de contacto*/
+    #contacto{
+        height: 1100px;
+        width: 580px;
+    }
+    #ubicacion{
+        height: 550px;
+        width: 580px;
+    }
+
+    #secUbi{
+        height: 400px;
+        width: 450px;
+    }
+    #datos{
+        height: 550px;
+        width: 580px;
+    }
+
+    #form{
+        height: 300px;
+        width: 280px;
+    }
+    /*fin seccion de contacto*/
+
+    /*seccion de footer*/
+    #caja-redes{
+        width: 400px;
+        margin-left: 100px;
+    }
+    /*fin seccion de footer*/
+
+}
+/* responsive de width menor a 599*/
+
+@media all and (max-width:599px){
+
+    /*secciones principales*/
+    header, section, footer{
+        width: 90%;
+    }
+    /*header*/
+    #header{
+        display: flex;
+        height:auto;
+    }
+    #logo{
+        height: 100%;
+        width: 30%;
+    }
+    .logo-pagina{
+        padding-left: 30px;
+        padding-top: 30px;
+        position: absolute;
+    }
+    #caja_botonera{
+        height: auto;
+        width: 30%;
+        margin-left:auto;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+    #botonera{
+        display: inline;
+    }
+    #botonera li a{
+
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+
+    }
+    /*fin header*/
+
+    /*seccion home*/
+    #home{
+        height: 700px;
+    }
+    #presentacion{
+        width: 60%;
+        margin-left: 15%;
+    }
+    #boton-unirse{
+        font-size: 100%;
+        padding: 10px 20px 10px 20px;
+        width: 190px;
+    }
+    /*fin seccion home*/
+
+    
+    /*seccion sobre nosotros*/
+    #nosotros{
+        height: 1100px;
+    }
+
+    #cont_nosotros{
+        height: auto;
+        width: 95%;
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    #sec1{
+        width: 80%;
+        height:500px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #sec2{
+        float: left;
+        width: 80%;
+        height: 300px;
+        margin-top: 10px;
+        margin-left:10px;
+    }
+
+    #sec3{
+        width: 80%;
+        float: left;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    /*fin seccion sobre nosotros*/
+
+    /*seccion de contacto*/
+    #contacto{
+        height: 1300px;
+    }
+
+    #ubicacion{
+        height: 650px;
+        width: 100%;
+    }
+
+    #secUbi{
+        width: 90%;
+    }
+    #datos{
+        height: 650px;
+        width: 100%;
+    }
+    #form{
+        width: 90%;
+    }
+    /*seccion de contacto*/
+
+    /*seccion de footer*/
+    footer{
+        height: 80px;
+        width: 90%;
+    }
+    #caja-redes{
+        height: 50px;
+        width: 70%;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 10%;
+    }
+    /*fin seccion de footer*/
+
+}
