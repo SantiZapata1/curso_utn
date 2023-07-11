@@ -2,7 +2,7 @@
 body, html{
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
-    background-color:#D6D58E;
+    background-color:#DBF227;
 }
 @font-face {
     font-family: 'Open Sans';
@@ -20,6 +20,7 @@ header, section, footer{
 header{
     background-color: #042940; 
     height: 80px;
+    border-bottom: #DBF227 3px solid;
 }
 #logo{
     float: left;
@@ -69,7 +70,7 @@ header{
 /*seccion home*/
 #home{
     background-image: url(images/fotogym.jpeg);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay; 
     height: 650px;
 }
@@ -109,12 +110,16 @@ header{
     background-color: #0b3853;
     border-radius: 30px;
     margin-top: 30px;
+    transition: transform 0.2s ease-in-out;
+
 }
 
 #boton-unirse:hover{
     color: #DBF227;
     border-color: #DBF227;
     cursor: pointer;
+    transform: scale(1.1);
+
 }
 
 /*fin seccion home*/
@@ -125,6 +130,12 @@ header{
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.zoom{
+    transition: transform 0.2s ease-in-out;
+}
+.zoom :hover{
+    transform: scale(1.1); 
 }
 
 /*div de la seccion contenido*/
@@ -141,12 +152,11 @@ header{
     margin-right: auto;
 
 }
-
 .centrar{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
 }
-
 /* fin seccion contenido */
 
 /*seccion sobre nosotros*/
@@ -211,6 +221,7 @@ input, textarea{
     height: 650px;
     width: 600px;
     float: left;
+
 }
 #secUbi{
     height: 500px;
@@ -231,6 +242,7 @@ iframe{
     height: 650px;
     width: 600px;
     float: right;
+
 }
 .subtitulo{
     text-align: center;
@@ -269,7 +281,7 @@ iframe{
 }
 
 #form{
-    background-color: #005C53;
+    background-color: #0b3853;
     height: 400px;
     width: 300px;
     margin-left:auto ;
@@ -284,6 +296,8 @@ iframe{
 footer{
     background-color: #042940; 
     height: 80px;
+    border-top: #DBF227 3px solid;
+
 }
 
 #caja-redes{
@@ -323,7 +337,7 @@ i:hover{
     }
     /*header*/
     #logo{
-        width: 150px;
+        width: 10px;
     }
     .logo-pagina{
         padding-left: 30px;
@@ -332,7 +346,7 @@ i:hover{
     }
     #caja_botonera{
         height: 50px;
-        width: 350px;
+        width: 500px;
         margin-right: 10px;
     }
     /* fin header*/
@@ -502,7 +516,7 @@ i:hover{
 
     #sec1{
         width: 80%;
-        height:500px;
+        height:auto;
         margin-top: 10px;
         margin-left: 10px;
     }
