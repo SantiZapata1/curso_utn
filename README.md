@@ -4,3 +4,5 @@ curso de "desarrollo web inicial" hecho en la UTN, aprendi los basicos de la web
 - HTML
 
 Como proyecto final, hice una landing page responsive para un "personal trainer".
+
+Deploy: https://curso-utn-six.vercel.app/ 
